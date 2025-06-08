@@ -1,11 +1,14 @@
 import os
-# import imghdr
 import subprocess
 from telegram import Update
 from telegram.ext import ApplicationBuilder, MessageHandler, CommandHandler, ContextTypes, filters
+from dotenv import load_dotenv  # <-- Add this line
 
-# Set your bot token here
-BOT_TOKEN = "7427418593:AAFAnstSz_rCylrcAguNlxe1tYmK10xwPvo"
+# Load environment variables from .env file
+load_dotenv()  # <-- Add this line
+
+# Get your bot token from the environment
+BOT_TOKEN = os.getenv("BOT_TOKEN")  # <-- Change this line
 
 # Folder to temporarily save files
 DOWNLOAD_FOLDER = "downloads"
