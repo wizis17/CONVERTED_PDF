@@ -48,27 +48,6 @@ cd word-to-pdf-bot
     python PDF_converted.py
     ```
 
- **Deploy on Railway
-
-1. Push your code to GitHub.
-2. Create a new project on [Railway](https://railway.app/).
-3. Add your `BOT_TOKEN` as a variable in the Railway dashboard.
-4. Use the provided `start.sh` as your start command:
-    ```
-    bash start.sh
-    ```
-5. Deploy and monitor logs for `Bot is running...`.
-
-## File Structure
-
-```
-PDF_converted.py
-requirements.txt
-.env
-start.sh
-downloads/   # (created automatically)
-```
-
 ## License
 
 MIT
