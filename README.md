@@ -1,39 +1,49 @@
-# Telegram Word to PDF Bot
+# 📄 Word to PDF Telegram Bot
 
-A Telegram bot that converts `.docx` files to PDF and sends them back to the user or group.  
-Powered by [python-telegram-bot](https://python-telegram-bot.org/) and LibreOffice.
+A simple and efficient Telegram bot that allows users to convert `.doc` or `.docx` Word files to `.pdf` format directly through chat.
 
-## Features
+## ✨ Features
 
-- Converts `.docx` files to PDF
-- Works in groups and private chats
-- Cleans up files after sending
+- 📥 Accepts Word files (`.doc`, `.docx`)
+- ⚙️ Converts them to high-quality PDF
+- 📤 Sends back the PDF file instantly
+- 🕹️ Easy to use via Telegram chat
+- 🛡️ Safe: files are not stored permanently
 
-## Requirements
+## 🚀 How to Use
+
+1. Open Telegram and search for your bot (e.g., `@Ts246_bot`)
+2. Start a conversation with `/start`
+3. Upload a `.doc` or `.docx` file
+4. Wait a moment while it converts...
+5. Get your `.pdf` file back!
+
+## 🛠️ Setup & Installation
+
+### Prerequisites
 
 - Python 3.8+
-- LibreOffice (installed automatically on Railway)
-- Telegram Bot Token
+- A Telegram Bot Token from [BotFather](https://t.me/BotFather)
+- `python-docx` and `reportlab` (or `docx2pdf` for Windows/Mac only)
+- `python-telegram-bot` library
 
-## Setup
+### Clone the repository
 
-1. **Clone the repository:**
-    ```bash
-    git clone https://github.com/yourusername/yourrepo.git
-    cd yourrepo
-    ```
+```bash
+git clone https://github.com/yourusername/word-to-pdf-bot.git
+cd word-to-pdf-bot
 
-2. **Create a `.env` file:**
+
+### Create a `.env` file:**
     ```
     BOT_TOKEN=your-telegram-bot-token
     ```
 
-3. **Install dependencies:**
+### Install dependencies:**
     ```bash
     pip install -r requirements.txt
-    ```
-
-4. **Run locally (LibreOffice must be installed and in PATH):**
+    ``
+### Run locally (LibreOffice must be installed and in PATH):**
     ```bash
     python PDF_converted.py
     ```
